@@ -1,0 +1,79 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/public/images/climas.jpg') ;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color:rgb(52, 78, 109, .9);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.card__title{
+    text-align: center;
+    font-size: 2.2rem;
+    grid-column: span 2;
+}
+.card__subtitle{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    grid-column: span 2;
+}
+.card__footer{
+    grid-column: span 2;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.card__info{
+    padding-top: 20px;
+    
+}
+.card__temp{
+
+text-align: center;
+font-size: 1.6rem;
+font-weight: 300;
+grid-column: span 2;
+}
+.card__description{
+    margin-bottom:15px ;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.card__list{
+display: grid;
+gap: 8px;
+}
+.card__item{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card__btn{
+    padding:0.5em  1em ;
+    font-size: 1.1rem;
+    border-radius:8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(86, 167, 199, 0.664);
+    color: white;
+    background-color:rgba(28, 71, 128, 0.445);
+}
+.card__btn:hover{
+transform: scale(1.05);
+transition: transform 100ms ease;
+}
